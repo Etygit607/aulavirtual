@@ -1,0 +1,340 @@
+:root{
+  --primary :rgba(24, 64, 8); 
+}
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-BoldItalic';
+  src: url('../fonts/Montserrat-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+body {
+  font-family: 'Montserrat-Regular';
+  background:rgba(0,0,76,0.6) !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway';
+}
+
+p {
+  line-height: 1.75;
+}
+
+a{
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover{
+  color: var(--primary);
+  opacity: 80%;
+  text-decoration: none;
+}
+
+#main{
+  margin-top: 100px;
+  min-height: 80vh;
+  margin: 0 !important;
+}
+
+.window-wrapper {
+  background: #11142f;
+}
+
+
+.global-header {
+  background: #11142f;
+  border-bottom: none;
+  z-index: 100;
+  width: 100%;
+}
+
+.global-header .header-logo a {
+  float: left;
+  margin: 0 !important;
+  display: block;
+  padding: 0 1rem 0 3rem;
+  height: 5rem;
+}
+
+.global-header .header-logo a .logo {
+  height: 25px !important;
+}
+
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0 1rem;
+  margin: .125rem 0 0;
+  font-size: 1rem;
+  text-align: left;
+  list-style: none;
+  background-color: #11142f !important;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}
+
+
+@media (min-width: 992px){
+
+  .window-wrapper {
+    margin: 5rem 0 0 0 !important;
+  }
+
+.global-header {
+  box-shadow: 0 0.25rem 0.75rem -0.5rem rgba(0,0,0,0.9) !important;
+  background: #11142f !important;
+  height: 5rem !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  overflow: visible;
+}
+
+.global-header .main-header {
+  height: 5rem;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.global-header .main-header .header-logo {
+  display: inline;
+  height: 4rem !important;
+  width: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 25% !important;
+  align-self: center;
+}
+
+.global-header .main-header .header-logo a {
+  float: left;
+  margin: 0 !important;
+  display: block;
+  padding: 0 1rem 0 3.5rem !important;
+  height: 4rem !important;
+}
+
+.global-header .main-header .header-logo a .logo {
+  height: 4rem !important;
+  padding: 0.95rem 0 0.85rem 0;
+}
+
+.global-header .main-header .nav-links {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+}
+
+.global-header .main-header .nav-links .nav-item {
+  margin: 0 20px;
+  padding: 0 !important;
+  height: 5rem !important;
+}
+
+.global-header .main-header .nav-links .nav-item a {
+  text-decoration: none !important;
+  font-size: 1.2rem !important;
+  background: #11142f !important;
+  color: #fff;
+  height: 5rem !important;
+  padding: 0 0.6rem !important;
+  margin: 0 !important;
+  justify-items: center;
+  line-height: 4;
+  font-weight: 800;
+  font-family: 'Montserrat-Medium';
+}
+
+.global-header .nav-links .main {
+  margin: 0 0 0 1.5rem!important;
+  width: 35%;
+}
+
+.global-header .nav-links .main .nav-tab {
+  text-transform: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.global-header .nav-links .secondary {
+  margin: 0 1.5rem 0 0 !important;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end !important;
+}
+
+.global-header .nav-links .secondary .nav-item {
+  color: #fff;
+  margin: 0 0.2rem !important;
+  height: 5rem !important;
+}
+
+.global-header .nav-links .secondary .nav-item a {
+  color: #fff;
+  margin: 0 0.2rem !important;
+  height: 5rem !important;
+}
+
+
+
+
+.global-header .main-header .nav-links .dropdown-item {
+  margin: 0 20px;
+  padding: 0 20px !important;
+  height: 5rem !important;
+  font-family: 'Montserrat-Medium';
+  border-top: 1px solid #fff;
+}
+
+.global-header .main-header .nav-links .social {
+  display: flex;
+  width: 30%;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: center;
+}
+
+.global-header .main-header .nav-links .social a.social-btn {
+  text-decoration: none !important;
+  font-size: 1.2rem !important;
+  line-height: 3;
+  background: #11142f !important;
+  color: #fff;
+  font-weight: 400;
+  height: 5rem !important;
+  padding: 0 0.15rem !important;
+  margin: 0 !important;
+  justify-items: center;
+  line-height: 4;
+  width: 2.1rem !important;
+}
+
+
+.global-header .main-header .nav-links .social .social-icon {
+  height: 1.3rem !important;
+}
+
+
+
+
+
+}
+
+@media (max-width: 991px){
+
+  .window-wrapper {
+    margin: 4rem !important;
+  }
+
+.global-header {
+  box-shadow: none;
+  box-shadow: 0 0.25rem 0.75rem -0.5rem rgba(0,0,0,0.9) !important;
+  background: rgba(0,0,76,0.6) !important;
+  height: 4rem !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  top: 0;
+  position: fixed;
+  z-index: 200;
+  overflow: visible;
+}
+
+.global-header .main-header {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  width: 100%;
+  height: 4rem !important;
+}
+
+.global-header .main-header .header-logo {
+  display: inline;
+  height: 4rem !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  justify-content: center;
+}
+
+
+.global-header .main-header .header-logo a {
+  height: 4rem;
+  margin: 0 0 0 4.5rem !important;
+  width: 177px !important;
+  padding: 0 calc(((100% - 177px) * 0.5) + 4.5rem) 0 calc(((100% - 177px) * 0.5) - 4.5rem) !important;
+}
+
+.global-header .main-header .header-logo a .logo {
+  height: 35px !important;
+  margin: 0 !important;
+  padding: 0.8rem 0 0.8rem 0 !important;
+}
+
+
+}
+
+.mobile-menu {
+  border-top: 1px solid #3b85ff;
+  margin: 4rem 0 0 0;
+  height: calc(100vh - 4rem) !important;
+  background: #000;
+  box-shadow: 0 0.25rem 0.75rem -0.5rem rgba(0,0,0,0.9) !important;
+  background: rgba(0,0,76,0.6) !important;
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+
+
+
+
+
+
+
