@@ -1,0 +1,36 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+
+<header>
+  <div class="welcome-header">
+    <div class="image-card">
+      <img class="welcome-img" src="{% static 'app/img/init.gif' %}" alt="Welcome">
+    </div>
+  </div>
+</header>
+
+<section class="init">
+  <div class="init-item">
+    <a href="#" class="btn init-link item-one">
+      LIBRERÍA
+    </a>
+  </div>
+  <div class="init-item">
+    <a href="#" class="btn init-link item-two">
+      COMUNIDAD
+    </a>
+  </div>
+  <div class="init-item">
+    <a href="#" class="btn init-link item-three">
+      LMS
+    </a>
+  </div>
+</section>
+  
+{% endblock %}
