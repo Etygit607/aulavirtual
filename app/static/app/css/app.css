@@ -336,5 +336,70 @@ a:hover{
 
 
 
+.welcome-header{
+  display: block;
+}
+
+.welcome-img{
+  display: block;
+  object-fit: cover;
+  height: calc(100vh - 11rem);
+  width: 100%;
+}
+
+
+.init{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 5rem 0 5rem;
+  background-color: #fff;
+  height: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.init-item {
+  display: block;
+  padding: 1rem 2.5rem;
+  box-sizing: border-box;
+}
+
+.init-link{
+  width: 22rem;
+  background-color: transparent !important;
+  padding: 0.5rem 5rem !important;
+  display: inline-block;
+  font-weight: 500;
+  font-family: 'Montserrat-Medium';
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.init-link.item-one{
+  color: #0084d7 !important;
+  border: 3px solid #0084d7 !important;
+}
+
+.init-link.item-two{
+  color: #00b5eb !important;
+  border: 3px solid #00b5eb !important;
+}
+
+.init-link.item-three{
+  color: #51dfec !important;
+  border: 3px solid #51dfec !important;
+}
 
 
