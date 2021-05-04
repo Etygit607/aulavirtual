@@ -29,7 +29,7 @@
 
 body {
   font-family: 'Montserrat-Regular';
-  background:rgba(0,0,76,0.6) !important;
+  background: #11142f !important;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -400,4 +400,138 @@ a:hover{
   border: 3px solid #51dfec !important;
 }
 
+
+/**************************************/
+.anet-courses{
+  width: 100%;
+  align-content: center;
+  padding: 2rem 0;
+}
+.container-head{
+  width: 100%;
+  display: block;
+  clear: both;
+}
+
+.container-head h2{
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  padding: 0 5rem;
+  float: left !important;
+}
+
+.container-head a {
+  align-content: flex-end;
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  padding: 0.5rem 5rem;
+  float: right !important;
+}
+
+#container-carousel {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  height: 17rem;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#container-carousel .arrow{
+  position:absolute;
+  z-index:10;
+  height: 17rem;
+  cursor: pointer;
+}
+
+#container-carousel .left-arrow {
+  left: 0 !important;
+  border-left: 5rem solid #11142f;
+  opacity: 0.5;
+  border-top: 7rem solid #11142f;
+  border-bottom: 7rem solid #11142f;
+  border-right: calc(((100vw - 5rem) / 5) - 8rem) solid #11142f;
+}
+
+#container-carousel .right-arrow {
+  right: 0 !important;
+  border-left: calc(((100vw - 5rem) / 5) - 8rem) solid #11142f;
+  opacity: 0.5;
+  border-top: 7rem solid #11142f;
+  border-bottom: 7rem solid #11142f;
+  border-right: 5rem solid #11142f;
+}
+
+
+#container-carousel .left-arrow:hover, #container-carousel .right-arrow:hover {
+  opacity: 0.8;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: #11142f;
+  background-blend-mode: exclusion;
+}
+
+.carousel {
+  width: 10000px;
+  left: 0px;
+  margin-left: -0.5rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.carousel .library {
+  float: left;
+  height: 17rem;
+  margin: 0 0.5rem;
+  width: calc((100vw - 5rem) / 5);
+  text-align: center;
+  border:#CCCCCC 1px solid;
+}
+
+.carousel .library img {
+  cursor:pointer;
+  width: 100%;
+  height: 57%;
+  object-fit: cover;
+}
+
+
+.carousel .library .library-description {
+  width: 100%;
+  height: 43%;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.carousel .library .library-description .title-card {
+  font-family: 'Montserrat-Black';
+  font-size: 1.1rem;
+  padding: 0.2rem;
+  height: 33%;
+  margin: 0;
+}
+
+.carousel .library .library-description .autor {
+  font-family: 'Montserrat-Medium';
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+  height: 33%;
+}
+
+
+.carousel .library .library-description .date {
+  font-family: 'Montserrat-Regular';
+  font-size: 0.9rem;
+  height: 34%;
+  padding: 0.8rem 0.5rem 0 0.5rem;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
 
