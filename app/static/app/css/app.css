@@ -406,12 +406,14 @@ a:hover{
   width: 100%;
   align-content: center;
   padding: 2rem 0;
+  height: 25rem;
 }
 
 .container-head{
   width: 100%;
   display: block;
   clear: both;
+  height: 2rem;
 }
 
 .container-head h2{
@@ -435,8 +437,7 @@ a:hover{
   overflow: hidden;
   height: 17rem;
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 1rem 0;
 }
 
 #container-carousel .arrow{
