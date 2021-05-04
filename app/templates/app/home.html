@@ -32,5 +32,43 @@
     </a>
   </div>
 </section>
-  
+
+
+<section id="content" class="anet-courses">
+  <div class="container-head">
+    <h2 class="courses-title">Librería</h2>
+    <a href="#" class="courses-title">Ver Todos</a>
+  </div>
+  <div id="container-carousel">
+    <div class="arrow left-arrow">
+      <span class="carousel-control-prev-icon"></span>
+    </div>
+    <div class="arrow right-arrow">
+      <span class="carousel-control-next-icon"></span>
+    </div>
+    <div class="frame-carousel">
+    </div>
+    <div class="carousel">
+      {% for book in books %}
+        <div class="library" id="library_{{ book.id }}">
+          <img src="{% static book.img %}" width="195" height="100" />
+          <div class="library-description">
+            <h5 class="title-card">{{book.title}}</h5>
+            <p class="autor"><a href="#">{{book.autor}}</a></p>
+            <p class="date"><a href="#">{{book.date}}</a></p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
 {% endblock %}
