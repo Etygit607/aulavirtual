@@ -535,3 +535,102 @@ a:hover{
   text-align: left;
 }
 
+
+/***************************************/
+
+/***************************************/
+
+.anet-footer {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b1d1d;
+  color: #8f9190;
+  font-size: 12px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.anet-footer .anet-img-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  width: 25%;
+}
+
+.anet-footer .anet-img-container span {
+  margin: 10px;
+  text-align: center;
+  color: #8f9190;
+}
+
+.anet-footer .footer-title {
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  font-size: 1rem;
+}
+.anet-img-container a {
+  display: contents;
+}
+.anet-footer span {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.anet-directions {
+  padding: 20px 0px;
+  width: 25%;
+  text-align: center;
+}
+
+.anet-directions .anet-dir1,.anet-dir2 {
+  margin-bottom: 10px;
+}
+
+.anet-contacts .anet-contact1,.anet-contact2 {
+  margin-bottom: 10px;
+}
+
+.anet-contacts {
+  padding: 20px 0px;
+  width: 25%;
+  text-align: center;
+}
+
+.anet-social {
+  padding: 20px 0px;
+  width: 25%;
+  text-align: center;
+}
+
+.anet-social ul {
+  display: contents;
+  flex-direction: column;
+}
+
+.anet-social ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.anet-social ul li i {
+  margin-right: 5px;
+  color: rgba(255,255,255,0.7);
+}
+
+.anet-social ul li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #8f9190;
+}
+
+.anet-vertical-line {
+  height: 130px;
+  border: 1px solid rgba(255,255,255,0.1);
+  margin: 20px auto;
+}
+/*************************************/
