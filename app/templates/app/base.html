@@ -90,36 +90,58 @@
   </div>
 
     <!-- Footer -->
-    <footer class="py-5 text-center footer text-faded">
-      <div class="container">
-        <p class="m-0">
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	    </p>
-        <p class="m-0 mbt">
-        	<a href="sample.html" class="link">Política de privacidad</a> ·
-        	<a href="sample.html" class="link">Aviso legal</a> ·
-        	<a href="sample.html" class="link">Cookies</a>
-		</p>
-        <p class="m-0 mbt1">&copy; Gestión de Pedidos 2020</p>
+    <div class="anet-footer">
+      <div class="anet-img-container">
+        <a href="https://aulanet.com.bo/">
+          <img src="{% static 'app/img/logo-footer.svg' %}" style="height: 110px">
+        </a>
       </div>
-	</footer>
+      <div class="anet-vertical-line"></div>
+      <div class="anet-directions">
+        <h2 class="footer-title">Direcciones</h2>
+        <div class="anet-dir1">
+          Calacoto entre C.16 y 17, Garden (Zona Sur) <br>
+          La Paz, Bolivia
+        </div>
+        <div class="anet-dir2">
+          Avenida San Martín Calle H no.39 (Zona Equipetrol) <br>
+          Santa Cruz, Bolivia
+        </div>
+      </div>
+      <div class="anet-vertical-line"></div>
+      <div class="anet-contacts">
+        <h2 class="footer-title">Contactos</h2>
+        <div class="anet-contact1">
+          Telefono: +591 75275552 <br>
+          La Paz, Bolivia
+        </div>
+        <div class="anet-contact2">
+          Telefono: +591 75828728 <br>
+          Santa Cruz, Bolivia
+        </div>
+      </div>
+      <div class="anet-vertical-line"></div>
+      <div class="anet-social">
+        <h2 class="footer-title">Redes Sociales</h2>
+        <ul>
+          <li>
+            <a href="https://wa.me/message/OTJLVTAW4ZGBG1" target="_blank">
+              <i class="fa fa-whatsapp"></i>Whatsapp
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/aulanet.bo" target="_blank">
+              <i class="fa fa-facebook-square"></i>Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/aulanet.bo" target="_blank">
+              <i class="fa fa-instagram"></i>Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Bootstrap -->
 
@@ -129,6 +151,8 @@
     <script src="{% static 'app/vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
     -->
+
+    <script src="{% static 'app/js/app.js' %}" type="text/javascript"></script>
 </body>
 
 
