@@ -4,6 +4,25 @@ from django.shortcuts import render, HttpResponse
 
 def home(request):
     #replace library class into books array
+
+    categories = [
+        {'id':1,'name':'La llorona', 'img':'app/img/library/01.jpg', 'date': '01-05-2018'},
+        {'id':2,'name':'El Robo',  'img':'app/img/library/02.jpg', 'date': '01-05-2014'},
+        {'id':3,'name':'El Mandril', 'img':'app/img/library/03.jpg', 'date': '01-05-2017'},
+        {'id':4,'name':'Tecnicas laborales',  'img':'app/img/library/04.jpg', 'date': '01-05-2017'},
+        {'id':5,'name':'Tecnicas intelectuales', 'img':'app/img/library/05.jpg', 'date': '01-05-2017'},
+        {'id':6,'name':'La llorona', 'img':'app/img/library/06.jpg', 'date': '01-05-2018'},
+        {'id':7,'name':'El Robo',  'img':'app/img/library/02.jpg', 'date': '01-05-2014'},
+        {'id':8,'name':'El Mandril', 'img':'app/img/library/04.jpg', 'date': '01-05-2017'},
+        {'id':9,'name':'Tecnicas laborales',  'img':'app/img/library/01.jpg', 'date': '01-05-2017'},
+        {'id':10,'name':'Tecnicas intelectuales', 'img':'app/img/library/02.jpg', 'date': '01-05-2017'},
+        {'id':11,'name':'La llorona', 'img':'app/img/library/01.jpg', 'date': '01-05-2018'},
+        {'id':12,'name':'El Robo',  'img':'app/img/library/02.jpg', 'date': '01-05-2014'},
+        {'id':13,'name':'El Mandril', 'img':'app/img/library/03.jpg', 'date': '01-05-2017'},
+        {'id':14,'name':'Tecnicas laborales',  'img':'app/img/library/04.jpg', 'date': '01-05-2017'},
+        {'id':15,'name':'Tecnicas intelectuales', 'img':'app/img/library/05.jpg', 'date': '01-05-2017'},
+    ]
+
     books = [
         {'id':1,'title':'La llorona', 'autor': 'Alvaro Rodriguez Peña', 'img':'app/img/library/01.jpg', 'date': '01-05-2018'},
         {'id':2,'title':'El Robo', 'autor': 'Manuel Peña Loza', 'img':'app/img/library/02.jpg', 'date': '01-05-2014'},
@@ -51,4 +70,4 @@ def home(request):
     ]
 
 
-    return render(request, 'app/home.html', {"books": books, "collages":collages, "clients": clients})
+    return render(request, 'app/home.html', {"books": books, "collages":collages, "clients": clients, "categories": categories})
