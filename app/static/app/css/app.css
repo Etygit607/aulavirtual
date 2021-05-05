@@ -658,6 +658,88 @@ a:hover{
 
 
 
+/**************************************/
+.anet-clients{
+  width: 100%;
+  align-content: center;
+  padding: 7rem 0 3rem 0;
+  height: 30rem;
+}
+
+.our-head{
+  width: 100%;
+  display: block;
+  clear: both;
+  height: 2rem;
+}
+
+.our-head h2{
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  padding: 0 5rem;
+  text-align: center;
+}
+
+.our-head a {
+  align-content: flex-end;
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  padding: 0.5rem 5rem;
+  float: right !important;
+}
+
+#collage-carousel {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  height: 17rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+
+.our-content {
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  z-index: 0;
+  padding: 3rem 7rem;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+}
+
+.our-content .clients {
+  float: left;
+  height: 9rem;
+  margin: 0 0.5rem;
+  width: calc((100vw - 5rem) / 7);
+  text-align: center;
+}
+
+.our-content .clients img {
+  cursor: pointer;
+  width: 9rem;
+  object-fit: contain;
+}
+
+
+/***************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
