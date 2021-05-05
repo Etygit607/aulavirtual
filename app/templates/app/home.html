@@ -63,10 +63,28 @@
 
 
 
-
-
-
-
-
+<section class="anet-history">
+  <div class="container-head">
+    <h2 class="courses-title">Instituciones</h2>
+    <a href="#" class="courses-title">Ver Todos</a>
+  </div>
+  <div id="collage-carousel">
+    <div class="arrow collage-left-arrow">
+      <span class="carousel-control-prev-icon"></span>
+    </div>
+    <div class="arrow collage-right-arrow">
+      <span class="carousel-control-next-icon"></span>
+    </div>
+    <div class="collage-carousel">
+      {% for collage in collages %}
+        <div class="history" id="history_{{ collage.id }}">
+          <a href="">
+            <img src="{% static collage.img %}" width="195" height="100" />
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+</section>
 
 {% endblock %}
