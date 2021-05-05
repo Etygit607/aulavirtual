@@ -39,4 +39,16 @@ def home(request):
         {'id':14,'name':'Tecnicas laborales',  'img':'app/img/library/04.jpg', 'date': '01-05-2017'},
         {'id':15,'name':'Tecnicas intelectuales', 'img':'app/img/library/05.jpg', 'date': '01-05-2017'},
     ]
-    return render(request, 'app/home.html', {"books": books, "collages":collages})
+
+    clients = [
+        {'id':1,'name':'Ipax', 'img':'app/img/our/Ipax.png', 'date': '01-05-2018'},
+        {'id':2,'name':'Starlab',  'img':'app/img/our/Starlab.png', 'date': '01-05-2014'},
+        {'id':3,'name':'Tigo', 'img':'app/img/our/tigo.png', 'date': '01-05-2017'},
+        {'id':4,'name':'Unicef',  'img':'app/img/our/unicef.png', 'date': '01-05-2017'},
+        {'id':5,'name':'Unesco', 'img':'app/img/our/unesco.png', 'date': '01-05-2017'},
+        {'id':6,'name':'Save the Children', 'img':'app/img/our/Save the children.png', 'date': '01-05-2018'},
+        {'id':7,'name':'Pica',  'img':'app/img/our/Pica.png', 'date': '01-05-2014'},
+    ]
+
+
+    return render(request, 'app/home.html', {"books": books, "collages":collages, "clients": clients})
