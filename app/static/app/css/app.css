@@ -540,6 +540,127 @@ a:hover{
 
 /***************************************/
 
+/**************************************/
+.anet-history{
+  width: 100%;
+  align-content: center;
+  padding: 2rem 0;
+  height: 25rem;
+}
+
+.container-head{
+  width: 100%;
+  display: block;
+  clear: both;
+  height: 2rem;
+}
+
+.container-head h2{
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  padding: 0 5rem;
+  float: left !important;
+}
+
+.container-head a {
+  align-content: flex-end;
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  padding: 0.5rem 5rem;
+  float: right !important;
+}
+
+#collage-carousel {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  height: 17rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+#collage-carousel .arrow{
+  position:absolute;
+  z-index:10;
+  height: 17rem;
+  cursor: pointer;
+}
+
+#collage-carousel .collage-left-arrow {
+  left: 0 !important;
+  border-left: 5rem solid #11142f;
+  opacity: 0.5;
+  border-top: 7rem solid #11142f;
+  border-bottom: 7rem solid #11142f;
+  border-right: calc(((100vw - 5rem) / 5) - 8rem) solid #11142f;
+}
+
+#collage-carousel .collage-right-arrow {
+  right: 0 !important;
+  border-left: calc(((100vw - 5rem) / 5) - 8rem) solid #11142f;
+  opacity: 0.5;
+  border-top: 7rem solid #11142f;
+  border-bottom: 7rem solid #11142f;
+  border-right: 5rem solid #11142f;
+}
+
+
+#collage-carousel .collage-left-arrow:hover, #collage-carousel .collage-right-arrow:hover {
+  opacity: 0.8;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: #11142f;
+  background-blend-mode: exclusion;
+}
+
+.collage-carousel {
+  width: 10000px;
+  left: 0px;
+  margin-left: -0.5rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.collage-carousel .history {
+  float: left;
+  height: 17rem;
+  margin: 0 0.5rem;
+  width: calc((100vw - 5rem) / 5);
+  text-align: center;
+  border:#CCCCCC 1px solid;
+}
+
+.collage-carousel .history img {
+  cursor:pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.collage-carousel .history .history-description {
+  width: 100%;
+  height: 43%;
+  background: #fff;
+  padding: 0.5rem;
+}
+
+
+
+/***************************************/
+
+
+
+
+
+
+
+
+
 /***************************************/
 
 .anet-footer {
