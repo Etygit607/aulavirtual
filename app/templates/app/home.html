@@ -33,6 +33,33 @@
   </div>
 </section>
 
+<section class="anet-category">
+  <div class="container-head">
+    <h2 class="courses-title">Categorias</h2>
+    <a href="#" class="courses-title">Ver Todas</a>
+  </div>
+  <div id="category-carousel">
+    <div class="arrow category-left-arrow">
+      <span class="carousel-control-prev-icon"></span>
+    </div>
+    <div class="arrow category-right-arrow">
+      <span class="carousel-control-next-icon"></span>
+    </div>
+    <div class="category-carousel">
+      {% for category in categories %}
+        <div class="category" id="category_{{ category.id }}">
+          <a href="">
+            <img src="{% static category.img %}" width="195" height="100" />
+          </a>
+          <div class="category-description">
+            <h5 class="title-card">{{category.name}}</h5>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+</div>
+</section>
+
 
 <section class="anet-library">
   <div class="container-head">
