@@ -402,6 +402,134 @@ a:hover{
 
 
 /**************************************/
+
+/**************************************/
+.anet-category{
+  width: 100%;
+  align-content: center;
+  padding: 2rem 0;
+  height: 39rem;
+}
+
+.container-head{
+  width: 100%;
+  display: block;
+  clear: both;
+  height: 2rem;
+}
+
+.container-head h2{
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  padding: 0 5rem;
+  float: left !important;
+}
+
+.container-head a {
+  align-content: flex-end;
+  color: #fff;
+  font-family: 'Montserrat-Black';
+  padding: 0.5rem 5rem;
+  float: right !important;
+}
+
+#category-carousel {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  height: 31rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+#category-carousel .arrow{
+  position:absolute;
+  z-index:10;
+  height: 31rem;
+  cursor: pointer;
+}
+
+#category-carousel .category-left-arrow {
+  left: 0 !important;
+  border-left: 5rem solid #11142f;
+  opacity: 0.5;
+  border-top: 14rem solid #11142f;
+  border-bottom: 14rem solid #11142f;
+  border-right: calc(((100vw - 5rem) / 5) - 8rem) solid #11142f;
+}
+
+#category-carousel .category-right-arrow {
+  right: 0 !important;
+  border-left: calc(((100vw - 5rem) / 5) - 8rem) solid #11142f;
+  opacity: 0.5;
+  border-top: 14rem solid #11142f;
+  border-bottom: 14rem solid #11142f;
+  border-right: 5rem solid #11142f;
+}
+
+
+#category-carousel .category-left-arrow:hover, #category-carousel .category-right-arrow:hover {
+  opacity: 0.8;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-color: #11142f;
+  background-blend-mode: exclusion;
+}
+
+.category-carousel {
+  width: 10000px;
+  left: 0px;
+  margin-left: -0.5rem;
+  position: absolute;
+  z-index: 0;
+}
+
+.category-carousel .category {
+  float: left;
+  height: 31rem;
+  margin: 0 0.5rem;
+  width: calc((100vw - 5rem) / 5);
+  text-align: center;
+  border:#CCCCCC 1px solid;
+}
+
+.category-carousel .category img {
+  cursor:pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.category-carousel .category .category-description {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  margin-top: -31rem;
+  color: #fff;
+  text-align: justify;
+}
+
+.category-carousel .category .category-description .title-card {
+  font-family: 'Montserrat-Black';
+  font-size: 1.6rem;
+  padding: 1.2rem;
+  height: 33%;
+  margin: 0;
+
+}
+
+/***************************************/
+
+
+
+
+
+/**************************************/
 .anet-library{
   width: 100%;
   align-content: center;
