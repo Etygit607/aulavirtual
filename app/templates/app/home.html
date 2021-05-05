@@ -87,4 +87,20 @@
 </div>
 </section>
 
+<section class="anet-clients">
+  <div class="our-head">
+    <h2 class="title">Gracias por la confianza</h2>
+  </div>
+  <div class="our-content">
+    {% for client in clients %}
+      <div class="clients" id="our_{{ client.id }}">
+        <a href="">
+          <img src="{% static client.img %}" width="195" height="100" />
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+
 {% endblock %}
