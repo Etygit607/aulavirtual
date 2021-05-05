@@ -52,3 +52,57 @@ btnL.addEventListener('click', function(){
 
 /******************************************/
 
+
+/******************************************/
+const collageContainer = document.querySelector("#collage-carousel");
+const collageCarousel = document.querySelector(".collage-carousel");
+let collageSection = document.querySelectorAll(".history");
+let collageSectionLast = collageSection[collageSection.length - 1];
+
+const btnLC = document.querySelector(".collage-left-arrow");
+const btnRC = document.querySelector(".collage-right-arrow");
+
+collageCarousel.insertAdjacentElement('afterbegin', collageSectionLast);
+
+function nextC(){
+    let collageSectionFirst= document.querySelectorAll(".history")[0];
+    collageCarousel.style.marginLeft = "calc((-(100vw - 5rem) / 5) * 2)";
+    collageCarousel.style.transition = "all 0.5s";
+    setTimeout(function(){
+        collageCarousel.style.transition = "none";
+        collageCarousel.insertAdjacentElement('beforeend', collageSectionFirst);
+        collageCarousel.style.marginLeft = "calc(-(100vw - 5rem) / 5)";
+    }, 500);
+    console.log("iteracion");
+}
+
+function prevC(){
+    let collageSection = document.querySelectorAll(".history");
+    let collageSectionLast = collageSection[collageSection.length - 1];
+    collageCarousel.style.marginLeft = "-0.5rem";
+    collageCarousel.style.transition = "all 0.5s";
+    setTimeout(function(){
+        collageCarousel.style.transition = "none";
+        collageCarousel.insertAdjacentElement('afterbegin', collageSectionLast);
+        collageCarousel.style.marginLeft = "calc(-(100vw - 5rem) / 5)";
+    }, 500);
+}
+
+/*
+function init(){
+    setInterval(function(){
+        next();
+    }, 5000);
+}
+
+window.onload = init;
+*/
+btnRC.addEventListener('click', function(){
+    nextC();
+});
+
+btnLC.addEventListener('click', function(){
+    prevC();
+});
+
+/******************************************/
